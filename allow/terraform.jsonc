@@ -1,0 +1,74 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Terraform ─────────────────────────────────────────────────────────
+
+      // Validation
+      "Bash(terraform validate:*)",
+      // -check flag only — plain `terraform fmt` rewrites files
+      "Bash(terraform fmt -check:*)",
+      "Bash(terraform fmt --check:*)",
+
+      // Planning & inspection (reads state, does not apply changes)
+      "Bash(terraform plan:*)",
+      "Bash(terraform show:*)",
+
+      // Output values
+      "Bash(terraform output:*)",
+
+      // State inspection
+      "Bash(terraform state list:*)",
+      "Bash(terraform state show:*)",
+      "Bash(terraform state pull:*)",
+
+      // Provider inspection
+      "Bash(terraform providers:*)",
+      "Bash(terraform providers schema:*)",
+
+      // Workspace inspection
+      "Bash(terraform workspace list:*)",
+      "Bash(terraform workspace show:*)",
+
+      // Dependency graph (outputs DOT format, no state change)
+      "Bash(terraform graph:*)",
+
+      // Version & help
+      "Bash(terraform version:*)",
+      "Bash(terraform -version:*)",
+
+      // ── OpenTofu (open-source Terraform fork, identical CLI surface) ──────
+
+      "Bash(tofu validate:*)",
+      "Bash(tofu fmt -check:*)",
+      "Bash(tofu fmt --check:*)",
+      "Bash(tofu plan:*)",
+      "Bash(tofu show:*)",
+      "Bash(tofu output:*)",
+      "Bash(tofu state list:*)",
+      "Bash(tofu state show:*)",
+      "Bash(tofu state pull:*)",
+      "Bash(tofu providers:*)",
+      "Bash(tofu providers schema:*)",
+      "Bash(tofu workspace list:*)",
+      "Bash(tofu workspace show:*)",
+      "Bash(tofu graph:*)",
+      "Bash(tofu version:*)",
+
+      // ── Terragrunt (Terraform wrapper) ────────────────────────────────────
+
+      "Bash(terragrunt validate:*)",
+      "Bash(terragrunt validate-inputs:*)",
+      "Bash(terragrunt hclfmt --check:*)",
+      "Bash(terragrunt plan:*)",
+      "Bash(terragrunt show:*)",
+      "Bash(terragrunt output:*)",
+      "Bash(terragrunt state list:*)",
+      "Bash(terragrunt state show:*)",
+      "Bash(terragrunt state pull:*)",
+      "Bash(terragrunt providers:*)",
+      "Bash(terragrunt graph:*)",
+      "Bash(terragrunt workspace list:*)",
+      "Bash(terragrunt workspace show:*)"
+    ]
+  }
+}

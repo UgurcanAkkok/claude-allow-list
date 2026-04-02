@@ -1,0 +1,129 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Status & working tree ─────────────────────────────────────────────
+
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+
+      // ── History & log ─────────────────────────────────────────────────────
+
+      "Bash(git log:*)",
+      "Bash(git shortlog:*)",
+      "Bash(git reflog show:*)",
+      "Bash(git rev-list:*)",
+      "Bash(git describe:*)",
+
+      // ── Blame & search ────────────────────────────────────────────────────
+
+      "Bash(git blame:*)",
+      "Bash(git grep:*)",
+
+      // ── Refs & low-level objects ──────────────────────────────────────────
+
+      "Bash(git rev-parse:*)",
+      "Bash(git cat-file:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git ls-remote:*)",
+      "Bash(git show-ref:*)",
+      "Bash(git for-each-ref:*)",
+      "Bash(git merge-base:*)",
+      "Bash(git name-rev:*)",
+      "Bash(git object-info:*)",
+
+      // ── Branches ─────────────────────────────────────────────────────────
+      // Specific flags only — Bash(git branch:*) would also match -d/-D (delete)
+
+      "Bash(git branch -a:*)",
+      "Bash(git branch -r:*)",
+      "Bash(git branch -v:*)",
+      "Bash(git branch -vv:*)",
+      "Bash(git branch --list:*)",
+      "Bash(git branch --show-current:*)",
+      "Bash(git branch --merged:*)",
+      "Bash(git branch --no-merged:*)",
+      "Bash(git branch --contains:*)",
+      "Bash(git branch --format:*)",
+
+      // ── Tags ─────────────────────────────────────────────────────────────
+      // Specific flags only — Bash(git tag:*) would also match tag creation
+
+      "Bash(git tag -l:*)",
+      "Bash(git tag --list:*)",
+      "Bash(git tag --sort:*)",
+      "Bash(git tag --contains:*)",
+      "Bash(git tag --merged:*)",
+      "Bash(git tag --no-merged:*)",
+      "Bash(git tag --points-at:*)",
+
+      // ── Remotes ───────────────────────────────────────────────────────────
+      // Specific subcommands only — git remote add/remove/set-url modify state
+
+      "Bash(git remote -v:*)",
+      "Bash(git remote show:*)",
+      "Bash(git remote get-url:*)",
+
+      // ── Config (read-only flags only) ─────────────────────────────────────
+
+      "Bash(git config --list:*)",
+      "Bash(git config --get:*)",
+      "Bash(git config --get-all:*)",
+      "Bash(git config --get-regex:*)",
+      "Bash(git config --get-urlmatch:*)",
+
+      // ── Stash (list & inspect only) ───────────────────────────────────────
+
+      "Bash(git stash list:*)",
+      "Bash(git stash show:*)",
+
+      // ── Submodules (inspect only) ─────────────────────────────────────────
+
+      "Bash(git submodule status:*)",
+      "Bash(git submodule summary:*)",
+
+      // ── Worktrees ─────────────────────────────────────────────────────────
+
+      "Bash(git worktree list:*)",
+
+      // ── Notes (read only) ─────────────────────────────────────────────────
+
+      "Bash(git notes list:*)",
+      "Bash(git notes show:*)",
+
+      // ── Bisect (inspect only) ─────────────────────────────────────────────
+
+      "Bash(git bisect log:*)",
+      "Bash(git bisect visualize:*)",
+
+      // ── Attributes & ignore ───────────────────────────────────────────────
+
+      "Bash(git check-ignore:*)",
+      "Bash(git check-attr:*)",
+      "Bash(git check-mailmap:*)",
+
+      // ── Patch inspection ──────────────────────────────────────────────────
+
+      "Bash(git format-patch:*)",
+      "Bash(git diff-tree:*)",
+      "Bash(git diff-index:*)",
+      "Bash(git diff-files:*)",
+
+      // ── Repository health & stats ─────────────────────────────────────────
+
+      "Bash(git count-objects:*)",
+      "Bash(git fsck:*)",
+      "Bash(git bundle verify:*)",
+
+      // ── Signature verification ────────────────────────────────────────────
+
+      "Bash(git verify-commit:*)",
+      "Bash(git verify-tag:*)",
+
+      // ── Version & help ────────────────────────────────────────────────────
+
+      "Bash(git version:*)"
+    ]
+  }
+}

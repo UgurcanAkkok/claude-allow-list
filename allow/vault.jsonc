@@ -1,0 +1,56 @@
+{
+  "permissions": {
+    "allow": [
+      // ── General ───────────────────────────────────────────────────────────
+
+      "Bash(vault status:*)",
+      "Bash(vault version:*)",
+      "Bash(vault path-help:*)",
+
+      // ── Read & List (fundamental operations) ──────────────────────────────
+
+      "Bash(vault read:*)",
+      "Bash(vault list:*)",
+      "Bash(vault print:*)",
+
+      // ── KV Secrets (read-only) ────────────────────────────────────────────
+
+      "Bash(vault kv get:*)",
+      "Bash(vault kv list:*)",
+      "Bash(vault kv metadata get:*)",
+      "Bash(vault kv metadata list:*)",
+
+      // ── Secrets Engines ───────────────────────────────────────────────────
+
+      "Bash(vault secrets list:*)",
+
+      // ── Auth Methods ──────────────────────────────────────────────────────
+
+      "Bash(vault auth list:*)",
+
+      // ── Policies ──────────────────────────────────────────────────────────
+
+      "Bash(vault policy list:*)",
+      "Bash(vault policy read:*)",
+
+      // ── Token Inspection ──────────────────────────────────────────────────
+
+      "Bash(vault token lookup:*)",
+      "Bash(vault token capabilities:*)",
+
+      // ── Audit ─────────────────────────────────────────────────────────────
+
+      "Bash(vault audit list:*)",
+
+      // ── Lease Inspection ──────────────────────────────────────────────────
+
+      "Bash(vault lease lookup:*)",
+      "Bash(vault lease list:*)",
+
+      // ── Namespace (Vault Enterprise) ──────────────────────────────────────
+
+      "Bash(vault namespace list:*)",
+      "Bash(vault namespace lookup:*)"
+    ]
+  }
+}

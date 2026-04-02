@@ -1,0 +1,89 @@
+{
+  "permissions": {
+    "allow": [
+      // ── nvm (Node Version Manager) ────────────────────────────────────────
+
+      "Bash(nvm list:*)",
+      "Bash(nvm ls:*)",
+      "Bash(nvm current:*)",
+      "Bash(nvm version:*)",
+      "Bash(nvm ls-remote:*)",
+      "Bash(nvm alias list:*)",
+
+      // ── pyenv (Python) ────────────────────────────────────────────────────
+
+      "Bash(pyenv versions:*)",
+      "Bash(pyenv version:*)",
+      "Bash(pyenv global:*)",
+      "Bash(pyenv local:*)",
+      "Bash(pyenv which:*)",
+      "Bash(pyenv shims:*)",
+
+      // ── rbenv (Ruby) ──────────────────────────────────────────────────────
+
+      "Bash(rbenv versions:*)",
+      "Bash(rbenv version:*)",
+      "Bash(rbenv global:*)",
+      "Bash(rbenv local:*)",
+      "Bash(rbenv which:*)",
+      "Bash(rbenv shims:*)",
+
+      // ── asdf (universal version manager) ─────────────────────────────────
+
+      "Bash(asdf list:*)",
+      "Bash(asdf current:*)",
+      "Bash(asdf which:*)",
+      "Bash(asdf latest:*)",
+      "Bash(asdf info:*)",
+      "Bash(asdf version:*)",
+      "Bash(asdf plugin list:*)",
+
+      // ── mise / rtx (modern asdf alternative) ─────────────────────────────
+
+      "Bash(mise list:*)",
+      "Bash(mise ls:*)",
+      "Bash(mise current:*)",
+      "Bash(mise which:*)",
+      "Bash(mise doctor:*)",
+      "Bash(mise version:*)",
+      "Bash(mise env:*)",
+      "Bash(rtx list:*)",
+      "Bash(rtx ls:*)",
+      "Bash(rtx current:*)",
+      "Bash(rtx which:*)",
+      "Bash(rtx doctor:*)",
+      "Bash(rtx version:*)",
+      "Bash(rtx env:*)",
+
+      // ── sdkman (Java/JVM) ─────────────────────────────────────────────────
+
+      "Bash(sdk list:*)",
+      "Bash(sdk current:*)",
+      "Bash(sdk version:*)",
+
+      // ── gvm (Go Version Manager) ──────────────────────────────────────────
+
+      "Bash(gvm list:*)",
+      "Bash(gvm listall:*)",
+
+      // ── rustup (Rust) ─────────────────────────────────────────────────────
+
+      "Bash(rustup show:*)",
+      "Bash(rustup toolchain list:*)",
+      "Bash(rustup target list:*)",
+      "Bash(rustup component list:*)",
+      "Bash(rustup check:*)",
+
+      // ── volta (Node) ──────────────────────────────────────────────────────
+
+      "Bash(volta list:*)",
+      "Bash(volta which:*)",
+
+      // ── fnm (Fast Node Manager) ───────────────────────────────────────────
+
+      "Bash(fnm list:*)",
+      "Bash(fnm ls:*)",
+      "Bash(fnm current:*)"
+    ]
+  }
+}

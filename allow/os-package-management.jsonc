@@ -1,0 +1,94 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Debian / Ubuntu (apt, apt-get, apt-cache, dpkg) ──────────────────
+
+      "Bash(apt list:*)",
+      "Bash(apt show:*)",
+      "Bash(apt search:*)",
+      "Bash(apt-cache show:*)",
+      "Bash(apt-cache search:*)",
+      "Bash(apt-cache policy:*)",
+      "Bash(apt-cache depends:*)",
+      "Bash(apt-cache rdepends:*)",
+      "Bash(dpkg -l:*)",
+      "Bash(dpkg -s:*)",
+      "Bash(dpkg -L:*)",
+      "Bash(dpkg -S:*)",
+      "Bash(dpkg --list:*)",
+      "Bash(dpkg --status:*)",
+      "Bash(dpkg --listfiles:*)",
+      "Bash(dpkg --search:*)",
+
+      // ── RHEL / Fedora / CentOS (dnf, yum, rpm) ───────────────────────────
+
+      "Bash(rpm -q:*)",
+      "Bash(rpm -qa:*)",
+      "Bash(rpm -qi:*)",
+      "Bash(rpm -ql:*)",
+      "Bash(rpm -qf:*)",
+      "Bash(dnf info:*)",
+      "Bash(dnf list:*)",
+      "Bash(dnf search:*)",
+      "Bash(dnf repolist:*)",
+      "Bash(dnf deplist:*)",
+      "Bash(dnf history:*)",
+      "Bash(yum info:*)",
+      "Bash(yum list:*)",
+      "Bash(yum search:*)",
+      "Bash(yum repolist:*)",
+      "Bash(yum deplist:*)",
+      "Bash(yum history:*)",
+
+      // ── Arch Linux (pacman, yay, paru) ───────────────────────────────────
+
+      "Bash(pacman -Q:*)",
+      "Bash(pacman -Qi:*)",
+      "Bash(pacman -Ql:*)",
+      "Bash(pacman -Qs:*)",
+      "Bash(pacman -Si:*)",
+      "Bash(pacman -Ss:*)",
+      "Bash(pacman -Fl:*)",
+      "Bash(yay -Ss:*)",
+      "Bash(yay -Si:*)",
+      "Bash(paru -Ss:*)",
+      "Bash(paru -Si:*)",
+
+      // ── macOS (brew) ──────────────────────────────────────────────────────
+
+      "Bash(brew list:*)",
+      "Bash(brew info:*)",
+      "Bash(brew search:*)",
+      "Bash(brew deps:*)",
+      "Bash(brew outdated:*)",
+      "Bash(brew leaves:*)",
+      "Bash(brew doctor:*)",
+      "Bash(brew config:*)",
+      "Bash(brew uses:*)",
+
+      // ── Alpine Linux (apk) ───────────────────────────────────────────────
+
+      "Bash(apk info:*)",
+      "Bash(apk list:*)",
+      "Bash(apk search:*)",
+      "Bash(apk version:*)",
+      "Bash(apk policy:*)",
+
+      // ── Snap (Ubuntu / cross-distro) ─────────────────────────────────────
+
+      "Bash(snap list:*)",
+      "Bash(snap info:*)",
+      "Bash(snap find:*)",
+      "Bash(snap changes:*)",
+      "Bash(snap connections:*)",
+
+      // ── Flatpak (cross-distro) ────────────────────────────────────────────
+
+      "Bash(flatpak list:*)",
+      "Bash(flatpak info:*)",
+      "Bash(flatpak search:*)",
+      "Bash(flatpak history:*)",
+      "Bash(flatpak remotes:*)"
+    ]
+  }
+}

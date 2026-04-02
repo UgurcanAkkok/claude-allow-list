@@ -1,0 +1,73 @@
+{
+  "permissions": {
+    "allow": [
+      // ── systemctl (read-only subcommands) ─────────────────────────────────
+
+      "Bash(systemctl status:*)",
+      "Bash(systemctl list-units:*)",
+      "Bash(systemctl list-unit-files:*)",
+      "Bash(systemctl list-sockets:*)",
+      "Bash(systemctl list-timers:*)",
+      "Bash(systemctl list-dependencies:*)",
+      "Bash(systemctl list-jobs:*)",
+      "Bash(systemctl list-machines:*)",
+      "Bash(systemctl is-active:*)",
+      "Bash(systemctl is-enabled:*)",
+      "Bash(systemctl is-failed:*)",
+      "Bash(systemctl show:*)",
+      "Bash(systemctl cat:*)",
+      "Bash(systemctl help:*)",
+      "Bash(systemctl get-default:*)",
+
+      // ── journalctl (read-only log viewer) ─────────────────────────────────
+
+      "Bash(journalctl:*)",
+
+      // ── systemd-analyze (performance analysis, read-only) ─────────────────
+
+      "Bash(systemd-analyze time:*)",
+      "Bash(systemd-analyze blame:*)",
+      "Bash(systemd-analyze critical-chain:*)",
+      "Bash(systemd-analyze plot:*)",
+      "Bash(systemd-analyze dot:*)",
+      "Bash(systemd-analyze dump:*)",
+      "Bash(systemd-analyze verify:*)",
+      "Bash(systemd-analyze security:*)",
+      "Bash(systemd-analyze calendar:*)",
+      "Bash(systemd-analyze timespan:*)",
+      "Bash(systemd-analyze cat-config:*)",
+
+      // ── loginctl (session/user info, read-only) ────────────────────────────
+
+      "Bash(loginctl list-sessions:*)",
+      "Bash(loginctl list-users:*)",
+      "Bash(loginctl list-seats:*)",
+      "Bash(loginctl show-session:*)",
+      "Bash(loginctl show-user:*)",
+
+      // ── hostnamectl (read-only) ────────────────────────────────────────────
+
+      "Bash(hostnamectl status:*)",
+
+      // ── timedatectl (read-only) ────────────────────────────────────────────
+
+      "Bash(timedatectl status:*)",
+      "Bash(timedatectl show:*)",
+      "Bash(timedatectl list-timezones:*)",
+
+      // ── resolvectl (DNS info, read-only) ──────────────────────────────────
+
+      "Bash(resolvectl status:*)",
+      "Bash(resolvectl query:*)",
+      "Bash(resolvectl statistics:*)",
+      "Bash(resolvectl dns:*)",
+      "Bash(resolvectl domain:*)",
+
+      // ── networkctl (network info, read-only) ──────────────────────────────
+
+      "Bash(networkctl list:*)",
+      "Bash(networkctl status:*)",
+      "Bash(networkctl lldp:*)"
+    ]
+  }
+}

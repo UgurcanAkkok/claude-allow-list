@@ -1,0 +1,140 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Python (pip, uv, poetry) ──────────────────────────────────────────
+
+      "Bash(pip list:*)",
+      "Bash(pip show:*)",
+      "Bash(pip freeze:*)",
+      "Bash(pip check:*)",
+      "Bash(pip index versions:*)",
+      "Bash(pip3 list:*)",
+      "Bash(pip3 show:*)",
+      "Bash(pip3 freeze:*)",
+      "Bash(pip3 check:*)",
+
+      "Bash(uv pip list:*)",
+      "Bash(uv pip show:*)",
+      "Bash(uv pip freeze:*)",
+      "Bash(uv pip check:*)",
+      "Bash(uv tree:*)",
+
+      "Bash(poetry show:*)",
+      "Bash(poetry check:*)",
+      "Bash(poetry env info:*)",
+      "Bash(poetry env list:*)",
+
+      // ── JavaScript / TypeScript (npm, yarn, pnpm, bun) ───────────────────
+
+      "Bash(npm list:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm info:*)",
+      "Bash(npm view:*)",
+      "Bash(npm outdated:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm search:*)",
+      "Bash(npm config list:*)",
+      "Bash(npm explain:*)",
+
+      "Bash(yarn list:*)",
+      "Bash(yarn info:*)",
+      "Bash(yarn outdated:*)",
+      "Bash(yarn audit:*)",
+      "Bash(yarn why:*)",
+      "Bash(yarn check:*)",
+
+      "Bash(pnpm list:*)",
+      "Bash(pnpm info:*)",
+      "Bash(pnpm outdated:*)",
+      "Bash(pnpm audit:*)",
+      "Bash(pnpm why:*)",
+
+      "Bash(bun pm ls:*)",
+      "Bash(bun outdated:*)",
+
+      // ── Java / Kotlin (Maven, Gradle) ─────────────────────────────────────
+
+      "Bash(mvn dependency:tree:*)",
+      "Bash(mvn dependency:list:*)",
+      "Bash(mvn dependency:analyze:*)",
+      "Bash(mvn versions:display-dependency-updates:*)",
+      "Bash(mvn versions:display-plugin-updates:*)",
+      "Bash(mvn help:describe:*)",
+      "Bash(mvn validate:*)",
+
+      "Bash(gradle dependencies:*)",
+      "Bash(gradle dependencyInsight:*)",
+      "Bash(gradle projects:*)",
+      "Bash(gradle tasks:*)",
+      "Bash(gradle properties:*)",
+      "Bash(gradle help:*)",
+
+      // ── Go ────────────────────────────────────────────────────────────────
+
+      "Bash(go list:*)",
+      "Bash(go mod graph:*)",
+      "Bash(go mod verify:*)",
+      "Bash(go mod why:*)",
+      "Bash(go version:*)",
+      "Bash(go env:*)",
+
+      // ── Rust (cargo) ──────────────────────────────────────────────────────
+
+      "Bash(cargo tree:*)",
+      "Bash(cargo search:*)",
+      "Bash(cargo info:*)",
+      "Bash(cargo metadata:*)",
+      "Bash(cargo verify-project:*)",
+      "Bash(cargo pkgid:*)",
+
+      // ── C# / .NET (dotnet / NuGet) ────────────────────────────────────────
+
+      "Bash(dotnet list package:*)",
+      "Bash(dotnet list reference:*)",
+      "Bash(dotnet nuget list source:*)",
+      "Bash(dotnet --info:*)",
+      "Bash(dotnet --version:*)",
+
+      // ── PHP (composer) ────────────────────────────────────────────────────
+
+      "Bash(composer show:*)",
+      "Bash(composer outdated:*)",
+      "Bash(composer depends:*)",
+      "Bash(composer prohibits:*)",
+      "Bash(composer validate:*)",
+      "Bash(composer check-platform-reqs:*)",
+      "Bash(composer licenses:*)",
+
+      // ── Ruby (gem, bundle) ────────────────────────────────────────────────
+
+      "Bash(gem list:*)",
+      "Bash(gem info:*)",
+      "Bash(gem search:*)",
+      "Bash(gem dependency:*)",
+      "Bash(gem contents:*)",
+      "Bash(gem outdated:*)",
+      "Bash(gem environment:*)",
+
+      "Bash(bundle list:*)",
+      "Bash(bundle info:*)",
+      "Bash(bundle outdated:*)",
+      "Bash(bundle show:*)",
+      "Bash(bundle check:*)",
+
+      // ── Swift (Swift Package Manager) ─────────────────────────────────────
+
+      "Bash(swift package show-dependencies:*)",
+      "Bash(swift package describe:*)",
+      "Bash(swift package dump-package:*)",
+
+      // ── Dart / Flutter ────────────────────────────────────────────────────
+
+      "Bash(dart pub deps:*)",
+      "Bash(dart pub outdated:*)",
+      "Bash(dart pub global list:*)",
+
+      "Bash(flutter pub deps:*)",
+      "Bash(flutter pub outdated:*)"
+    ]
+  }
+}

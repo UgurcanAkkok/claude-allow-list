@@ -1,0 +1,170 @@
+{
+  "permissions": {
+    "allow": [
+      // ── PostgreSQL ────────────────────────────────────────────────────────
+
+      // List databases (no SQL execution)
+      "Bash(psql -l:*)",
+      "Bash(psql --list:*)",
+      "Bash(psql --version:*)",
+
+      // Connection health check
+      "Bash(pg_isready:*)",
+
+      // Build & runtime configuration
+      "Bash(pg_config:*)",
+
+      // Schema & data export (reads DB, does not modify it)
+      "Bash(pg_dump:*)",
+      "Bash(pg_dumpall:*)",
+
+      // List archive contents without restoring
+      "Bash(pg_restore --list:*)",
+
+      // ── MySQL / MariaDB ───────────────────────────────────────────────────
+
+      "Bash(mysql --version:*)",
+
+      // Admin inspection commands (subcommand-scoped to read-only operations)
+      "Bash(mysqladmin ping:*)",
+      "Bash(mysqladmin status:*)",
+      "Bash(mysqladmin extended-status:*)",
+      "Bash(mysqladmin processlist:*)",
+      "Bash(mysqladmin variables:*)",
+      "Bash(mysqladmin version:*)",
+
+      // List databases, tables, columns
+      "Bash(mysqlshow:*)",
+
+      // Table integrity checks (--check does not modify data)
+      "Bash(mysqlcheck --check:*)",
+      "Bash(mysqlcheck -c:*)",
+
+      // Schema & data export (reads DB, does not modify it)
+      "Bash(mysqldump:*)",
+
+      // ── Redis ─────────────────────────────────────────────────────────────
+
+      "Bash(redis-cli --version:*)",
+
+      // Server info & health
+      "Bash(redis-cli ping:*)",
+      "Bash(redis-cli info:*)",
+      "Bash(redis-cli dbsize:*)",
+      "Bash(redis-cli time:*)",
+
+      // Key inspection (KEYS omitted — O(N) full keyspace scan, blocks server; use SCAN instead)
+      "Bash(redis-cli scan:*)",
+      "Bash(redis-cli type:*)",
+      "Bash(redis-cli exists:*)",
+      "Bash(redis-cli ttl:*)",
+      "Bash(redis-cli pttl:*)",
+      "Bash(redis-cli object encoding:*)",
+      "Bash(redis-cli object refcount:*)",
+      "Bash(redis-cli object idletime:*)",
+
+      // String
+      "Bash(redis-cli get:*)",
+      "Bash(redis-cli mget:*)",
+      "Bash(redis-cli strlen:*)",
+      "Bash(redis-cli getrange:*)",
+
+      // List
+      "Bash(redis-cli llen:*)",
+      "Bash(redis-cli lrange:*)",
+      "Bash(redis-cli lindex:*)",
+
+      // Set (SMEMBERS omitted — O(N) no-cursor scan, blocks on large sets; use SSCAN instead)
+      "Bash(redis-cli scard:*)",
+      "Bash(redis-cli sismember:*)",
+      "Bash(redis-cli srandmember:*)",
+
+      // Hash (HKEYS/HVALS/HGETALL omitted — O(N) full hash scan, blocks on large hashes; use HSCAN instead)
+      "Bash(redis-cli hlen:*)",
+      "Bash(redis-cli hget:*)",
+      "Bash(redis-cli hmget:*)",
+      "Bash(redis-cli hexists:*)",
+
+      // Sorted set
+      "Bash(redis-cli zcard:*)",
+      "Bash(redis-cli zrange:*)",
+      "Bash(redis-cli zrevrange:*)",
+      "Bash(redis-cli zscore:*)",
+      "Bash(redis-cli zrank:*)",
+      "Bash(redis-cli zcount:*)",
+
+      // Memory & performance
+      "Bash(redis-cli memory usage:*)",
+      "Bash(redis-cli memory doctor:*)",
+      "Bash(redis-cli memory stats:*)",
+      "Bash(redis-cli slowlog get:*)",
+      "Bash(redis-cli slowlog len:*)",
+
+      // Clients & config
+      "Bash(redis-cli client list:*)",
+      "Bash(redis-cli client info:*)",
+      "Bash(redis-cli config get:*)",
+
+      // Cluster
+      "Bash(redis-cli cluster info:*)",
+      "Bash(redis-cli cluster nodes:*)",
+      "Bash(redis-cli cluster slots:*)",
+
+      // Diagnostic tools (read-only scans)
+      "Bash(redis-cli --latency:*)",
+      "Bash(redis-cli --latency-history:*)",
+      "Bash(redis-cli --stat:*)",
+      "Bash(redis-cli --bigkeys:*)",
+      "Bash(redis-cli --hotkeys:*)",
+      "Bash(redis-cli --memkeys:*)",
+
+      // ── MongoDB ───────────────────────────────────────────────────────────
+
+      "Bash(mongosh --version:*)",
+      "Bash(mongo --version:*)",
+
+      // ── SQLite ────────────────────────────────────────────────────────────
+
+      "Bash(sqlite3 --version:*)",
+
+      // ── Cassandra ─────────────────────────────────────────────────────────
+
+      "Bash(cqlsh --version:*)",
+
+      // ── ClickHouse ────────────────────────────────────────────────────────
+
+      "Bash(clickhouse-client --version:*)",
+      "Bash(clickhouse client --version:*)",
+
+      // ── CockroachDB ───────────────────────────────────────────────────────
+
+      "Bash(cockroach version:*)",
+      "Bash(cockroach node ls:*)",
+      "Bash(cockroach node status:*)",
+
+      // ── Kafka ─────────────────────────────────────────────────────────────
+
+      // Topics
+      "Bash(kafka-topics.sh --list:*)",
+      "Bash(kafka-topics.sh --describe:*)",
+      "Bash(kafka-topics --list:*)",
+      "Bash(kafka-topics --describe:*)",
+
+      // Consumer groups
+      "Bash(kafka-consumer-groups.sh --list:*)",
+      "Bash(kafka-consumer-groups.sh --describe:*)",
+      "Bash(kafka-consumer-groups --list:*)",
+      "Bash(kafka-consumer-groups --describe:*)",
+
+      // Broker & cluster config
+      "Bash(kafka-configs.sh --describe:*)",
+      "Bash(kafka-configs --describe:*)",
+      "Bash(kafka-broker-api-versions.sh:*)",
+      "Bash(kafka-broker-api-versions:*)",
+
+      // Log inspection
+      "Bash(kafka-log-dirs.sh --describe:*)",
+      "Bash(kafka-log-dirs --describe:*)"
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Identity & auth ───────────────────────────────────────────────────
+
+      "Bash(aws sts get-caller-identity:*)",
+      "Bash(aws sts get-session-token:*)",
+      "Bash(aws sts decode-authorization-message:*)",
+
+      // ── IAM ───────────────────────────────────────────────────────────────
+
+      "Bash(aws iam list-users:*)",
+      "Bash(aws iam get-user:*)",
+      "Bash(aws iam list-roles:*)",
+      "Bash(aws iam get-role:*)",
+      "Bash(aws iam list-groups:*)",
+      "Bash(aws iam get-group:*)",
+      "Bash(aws iam list-policies:*)",
+      "Bash(aws iam get-policy:*)",
+      "Bash(aws iam get-policy-version:*)",
+      "Bash(aws iam list-attached-role-policies:*)",
+      "Bash(aws iam list-attached-user-policies:*)",
+      "Bash(aws iam list-role-policies:*)",
+      "Bash(aws iam get-role-policy:*)",
+      "Bash(aws iam list-instance-profiles:*)",
+      "Bash(aws iam get-instance-profile:*)",
+      "Bash(aws iam list-account-aliases:*)",
+      "Bash(aws iam get-account-summary:*)",
+      "Bash(aws iam simulate-principal-policy:*)",
+
+      // ── S3 ────────────────────────────────────────────────────────────────
+
+      "Bash(aws s3 ls:*)",
+      "Bash(aws s3api list-buckets:*)",
+      "Bash(aws s3api list-objects:*)",
+      "Bash(aws s3api list-objects-v2:*)",
+      "Bash(aws s3api head-bucket:*)",
+      "Bash(aws s3api head-object:*)",
+      "Bash(aws s3api get-bucket-location:*)",
+      "Bash(aws s3api get-bucket-versioning:*)",
+      "Bash(aws s3api get-bucket-policy:*)",
+      "Bash(aws s3api get-bucket-acl:*)",
+      "Bash(aws s3api get-bucket-encryption:*)",
+      "Bash(aws s3api get-bucket-logging:*)",
+      "Bash(aws s3api get-bucket-tagging:*)",
+      "Bash(aws s3api get-bucket-lifecycle-configuration:*)",
+      "Bash(aws s3api get-public-access-block:*)",
+
+      // ── EC2 ───────────────────────────────────────────────────────────────
+
+      "Bash(aws ec2 describe-instances:*)",
+      "Bash(aws ec2 describe-instance-types:*)",
+      "Bash(aws ec2 describe-instance-status:*)",
+      "Bash(aws ec2 describe-vpcs:*)",
+      "Bash(aws ec2 describe-subnets:*)",
+      "Bash(aws ec2 describe-security-groups:*)",
+      "Bash(aws ec2 describe-route-tables:*)",
+      "Bash(aws ec2 describe-internet-gateways:*)",
+      "Bash(aws ec2 describe-nat-gateways:*)",
+      "Bash(aws ec2 describe-network-interfaces:*)",
+      "Bash(aws ec2 describe-network-acls:*)",
+      "Bash(aws ec2 describe-volumes:*)",
+      "Bash(aws ec2 describe-snapshots:*)",
+      "Bash(aws ec2 describe-images:*)",
+      "Bash(aws ec2 describe-key-pairs:*)",
+      "Bash(aws ec2 describe-elastic-ip-addresses:*)",
+      "Bash(aws ec2 describe-availability-zones:*)",
+      "Bash(aws ec2 describe-regions:*)",
+      "Bash(aws ec2 describe-tags:*)",
+      "Bash(aws ec2 describe-launch-templates:*)",
+      "Bash(aws ec2 describe-auto-scaling-groups:*)",
+      "Bash(aws ec2 describe-vpc-endpoints:*)",
+      "Bash(aws ec2 describe-vpc-peering-connections:*)",
+
+      // ── EKS ───────────────────────────────────────────────────────────────
+
+      "Bash(aws eks list-clusters:*)",
+      "Bash(aws eks describe-cluster:*)",
+      "Bash(aws eks list-nodegroups:*)",
+      "Bash(aws eks describe-nodegroup:*)",
+      "Bash(aws eks list-fargate-profiles:*)",
+      "Bash(aws eks describe-fargate-profile:*)",
+      "Bash(aws eks list-addons:*)",
+      "Bash(aws eks describe-addon:*)",
+      "Bash(aws eks list-identity-provider-configs:*)",
+
+      // ── ECS ───────────────────────────────────────────────────────────────
+
+      "Bash(aws ecs list-clusters:*)",
+      "Bash(aws ecs describe-clusters:*)",
+      "Bash(aws ecs list-services:*)",
+      "Bash(aws ecs describe-services:*)",
+      "Bash(aws ecs list-tasks:*)",
+      "Bash(aws ecs describe-tasks:*)",
+      "Bash(aws ecs list-task-definitions:*)",
+      "Bash(aws ecs describe-task-definition:*)",
+      "Bash(aws ecs list-container-instances:*)",
+      "Bash(aws ecs describe-container-instances:*)",
+
+      // ── ECR ───────────────────────────────────────────────────────────────
+
+      "Bash(aws ecr describe-repositories:*)",
+      "Bash(aws ecr list-images:*)",
+      "Bash(aws ecr describe-images:*)",
+      "Bash(aws ecr get-repository-policy:*)",
+      "Bash(aws ecr describe-registry:*)",
+      "Bash(aws ecr get-lifecycle-policy:*)",
+
+      // ── Lambda ────────────────────────────────────────────────────────────
+
+      "Bash(aws lambda list-functions:*)",
+      "Bash(aws lambda get-function:*)",
+      "Bash(aws lambda get-function-configuration:*)",
+      "Bash(aws lambda list-aliases:*)",
+      "Bash(aws lambda list-versions-by-function:*)",
+      "Bash(aws lambda list-event-source-mappings:*)",
+      "Bash(aws lambda get-policy:*)",
+      "Bash(aws lambda list-layers:*)",
+      "Bash(aws lambda get-layer-version:*)",
+
+      // ── CloudFormation ────────────────────────────────────────────────────
+
+      "Bash(aws cloudformation list-stacks:*)",
+      "Bash(aws cloudformation describe-stacks:*)",
+      "Bash(aws cloudformation describe-stack-resources:*)",
+      "Bash(aws cloudformation describe-stack-events:*)",
+      "Bash(aws cloudformation get-template:*)",
+      "Bash(aws cloudformation get-template-summary:*)",
+      "Bash(aws cloudformation list-stack-resources:*)",
+      "Bash(aws cloudformation list-exports:*)",
+      "Bash(aws cloudformation validate-template:*)",
+      "Bash(aws cloudformation describe-change-set:*)",
+      "Bash(aws cloudformation list-change-sets:*)",
+
+      // ── CloudWatch ────────────────────────────────────────────────────────
+
+      "Bash(aws cloudwatch list-metrics:*)",
+      "Bash(aws cloudwatch get-metric-statistics:*)",
+      "Bash(aws cloudwatch get-metric-data:*)",
+      "Bash(aws cloudwatch describe-alarms:*)",
+      "Bash(aws cloudwatch describe-alarm-history:*)",
+      "Bash(aws cloudwatch list-dashboards:*)",
+      "Bash(aws cloudwatch get-dashboard:*)",
+
+      // ── CloudWatch Logs ───────────────────────────────────────────────────
+
+      "Bash(aws logs describe-log-groups:*)",
+      "Bash(aws logs describe-log-streams:*)",
+      "Bash(aws logs get-log-events:*)",
+      "Bash(aws logs filter-log-events:*)",
+      "Bash(aws logs describe-metric-filters:*)",
+      "Bash(aws logs describe-subscription-filters:*)",
+      "Bash(aws logs describe-queries:*)",
+      "Bash(aws logs get-query-results:*)",
+      "Bash(aws logs start-query:*)",
+
+      // ── RDS ───────────────────────────────────────────────────────────────
+
+      "Bash(aws rds describe-db-instances:*)",
+      "Bash(aws rds describe-db-clusters:*)",
+      "Bash(aws rds describe-db-snapshots:*)",
+      "Bash(aws rds describe-db-subnet-groups:*)",
+      "Bash(aws rds describe-db-parameter-groups:*)",
+      "Bash(aws rds describe-db-security-groups:*)",
+      "Bash(aws rds describe-event-subscriptions:*)",
+      "Bash(aws rds describe-db-log-files:*)",
+
+      // ── ElastiCache ───────────────────────────────────────────────────────
+
+      "Bash(aws elasticache describe-cache-clusters:*)",
+      "Bash(aws elasticache describe-replication-groups:*)",
+      "Bash(aws elasticache describe-cache-subnet-groups:*)",
+      "Bash(aws elasticache describe-cache-parameter-groups:*)",
+      "Bash(aws elasticache describe-snapshots:*)",
+
+      // ── ELB / ALB ─────────────────────────────────────────────────────────
+
+      "Bash(aws elbv2 describe-load-balancers:*)",
+      "Bash(aws elbv2 describe-target-groups:*)",
+      "Bash(aws elbv2 describe-listeners:*)",
+      "Bash(aws elbv2 describe-rules:*)",
+      "Bash(aws elbv2 describe-target-health:*)",
+      "Bash(aws elbv2 describe-tags:*)",
+
+      // ── Route 53 ──────────────────────────────────────────────────────────
+
+      "Bash(aws route53 list-hosted-zones:*)",
+      "Bash(aws route53 get-hosted-zone:*)",
+      "Bash(aws route53 list-resource-record-sets:*)",
+      "Bash(aws route53 list-health-checks:*)",
+      "Bash(aws route53 get-health-check:*)",
+
+      // ── ACM (certificates) ────────────────────────────────────────────────
+
+      "Bash(aws acm list-certificates:*)",
+      "Bash(aws acm describe-certificate:*)",
+      "Bash(aws acm get-certificate:*)",
+
+      // ── Secrets Manager (list only — get-secret-value exposes secrets) ────
+
+      "Bash(aws secretsmanager list-secrets:*)",
+      "Bash(aws secretsmanager describe-secret:*)",
+      "Bash(aws secretsmanager list-secret-version-ids:*)",
+
+      // ── SSM Parameter Store (list/describe only) ──────────────────────────
+
+      "Bash(aws ssm describe-parameters:*)",
+      "Bash(aws ssm list-documents:*)",
+      "Bash(aws ssm describe-document:*)",
+      "Bash(aws ssm describe-association:*)",
+      "Bash(aws ssm list-associations:*)",
+
+      // ── DynamoDB ──────────────────────────────────────────────────────────
+
+      "Bash(aws dynamodb list-tables:*)",
+      "Bash(aws dynamodb describe-table:*)",
+      "Bash(aws dynamodb list-global-tables:*)",
+      "Bash(aws dynamodb describe-global-table:*)",
+      "Bash(aws dynamodb list-backups:*)",
+
+      // ── SNS ───────────────────────────────────────────────────────────────
+
+      "Bash(aws sns list-topics:*)",
+      "Bash(aws sns get-topic-attributes:*)",
+      "Bash(aws sns list-subscriptions:*)",
+      "Bash(aws sns list-subscriptions-by-topic:*)",
+
+      // ── SQS ───────────────────────────────────────────────────────────────
+
+      "Bash(aws sqs list-queues:*)",
+      "Bash(aws sqs get-queue-attributes:*)",
+      "Bash(aws sqs get-queue-url:*)",
+
+      // ── CodePipeline / CodeBuild ──────────────────────────────────────────
+
+      "Bash(aws codepipeline list-pipelines:*)",
+      "Bash(aws codepipeline get-pipeline:*)",
+      "Bash(aws codepipeline get-pipeline-state:*)",
+      "Bash(aws codepipeline list-pipeline-executions:*)",
+      "Bash(aws codebuild list-projects:*)",
+      "Bash(aws codebuild batch-get-projects:*)",
+      "Bash(aws codebuild list-builds:*)",
+      "Bash(aws codebuild batch-get-builds:*)",
+
+      // ── Auto Scaling ──────────────────────────────────────────────────────
+
+      "Bash(aws autoscaling describe-auto-scaling-groups:*)",
+      "Bash(aws autoscaling describe-auto-scaling-instances:*)",
+      "Bash(aws autoscaling describe-launch-configurations:*)",
+      "Bash(aws autoscaling describe-scaling-activities:*)",
+      "Bash(aws autoscaling describe-policies:*)",
+
+      // ── Account & config ──────────────────────────────────────────────────
+
+      "Bash(aws configure list:*)",
+      "Bash(aws configure list-profiles:*)",
+      "Bash(aws account list-regions:*)"
+    ]
+  }
+}

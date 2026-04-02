@@ -1,0 +1,173 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Account & subscription ────────────────────────────────────────────
+
+      "Bash(az account list:*)",
+      "Bash(az account show:*)",
+      "Bash(az account list-locations:*)",
+      "Bash(az account subscription list:*)",
+      "Bash(az account tenant list:*)",
+
+      // ── Resource groups ───────────────────────────────────────────────────
+
+      "Bash(az group list:*)",
+      "Bash(az group show:*)",
+
+      // ── Compute (VMs) ─────────────────────────────────────────────────────
+
+      "Bash(az vm list:*)",
+      "Bash(az vm show:*)",
+      "Bash(az vm list-sizes:*)",
+      "Bash(az vm list-usage:*)",
+      "Bash(az vm get-instance-view:*)",
+      "Bash(az vm image list:*)",
+      "Bash(az vm image show:*)",
+      "Bash(az vm extension list:*)",
+      "Bash(az vmss list:*)",
+      "Bash(az vmss show:*)",
+      "Bash(az vmss list-instances:*)",
+
+      // ── Disks & snapshots ─────────────────────────────────────────────────
+
+      "Bash(az disk list:*)",
+      "Bash(az disk show:*)",
+      "Bash(az snapshot list:*)",
+      "Bash(az snapshot show:*)",
+
+      // ── AKS ───────────────────────────────────────────────────────────────
+
+      "Bash(az aks list:*)",
+      "Bash(az aks show:*)",
+      "Bash(az aks nodepool list:*)",
+      "Bash(az aks nodepool show:*)",
+      "Bash(az aks get-upgrades:*)",
+      "Bash(az aks check-acr:*)",
+
+      // ── Container Registry (ACR) ──────────────────────────────────────────
+
+      "Bash(az acr list:*)",
+      "Bash(az acr show:*)",
+      "Bash(az acr repository list:*)",
+      "Bash(az acr repository show:*)",
+      "Bash(az acr repository show-tags:*)",
+      "Bash(az acr repository show-manifests:*)",
+
+      // ── Networking ────────────────────────────────────────────────────────
+
+      "Bash(az network vnet list:*)",
+      "Bash(az network vnet show:*)",
+      "Bash(az network vnet subnet list:*)",
+      "Bash(az network vnet subnet show:*)",
+      "Bash(az network nsg list:*)",
+      "Bash(az network nsg show:*)",
+      "Bash(az network nsg rule list:*)",
+      "Bash(az network public-ip list:*)",
+      "Bash(az network public-ip show:*)",
+      "Bash(az network lb list:*)",
+      "Bash(az network lb show:*)",
+      "Bash(az network application-gateway list:*)",
+      "Bash(az network application-gateway show:*)",
+      "Bash(az network route-table list:*)",
+      "Bash(az network route-table show:*)",
+      "Bash(az network nic list:*)",
+      "Bash(az network nic show:*)",
+      "Bash(az network dns zone list:*)",
+      "Bash(az network dns zone show:*)",
+      "Bash(az network dns record-set list:*)",
+      "Bash(az network private-endpoint list:*)",
+      "Bash(az network private-endpoint show:*)",
+
+      // ── Storage ───────────────────────────────────────────────────────────
+
+      "Bash(az storage account list:*)",
+      "Bash(az storage account show:*)",
+      "Bash(az storage container list:*)",
+      "Bash(az storage blob list:*)",
+      "Bash(az storage share list:*)",
+      "Bash(az storage table list:*)",
+      "Bash(az storage queue list:*)",
+
+      // ── IAM / RBAC ────────────────────────────────────────────────────────
+
+      "Bash(az role definition list:*)",
+      "Bash(az role definition show:*)",
+      "Bash(az role assignment list:*)",
+      "Bash(az ad user list:*)",
+      "Bash(az ad user show:*)",
+      "Bash(az ad group list:*)",
+      "Bash(az ad group show:*)",
+      "Bash(az ad sp list:*)",
+      "Bash(az ad sp show:*)",
+
+      // ── App Service ───────────────────────────────────────────────────────
+
+      "Bash(az webapp list:*)",
+      "Bash(az webapp show:*)",
+      "Bash(az webapp config show:*)",
+      "Bash(az webapp log show:*)",
+      "Bash(az appservice plan list:*)",
+      "Bash(az appservice plan show:*)",
+
+      // ── Functions ─────────────────────────────────────────────────────────
+
+      "Bash(az functionapp list:*)",
+      "Bash(az functionapp show:*)",
+      "Bash(az functionapp function list:*)",
+      "Bash(az functionapp function show:*)",
+
+      // ── Key Vault (list only — secret show exposes values) ────────────────
+
+      "Bash(az keyvault list:*)",
+      "Bash(az keyvault show:*)",
+      "Bash(az keyvault secret list:*)",
+      "Bash(az keyvault key list:*)",
+      "Bash(az keyvault certificate list:*)",
+
+      // ── Databases ─────────────────────────────────────────────────────────
+
+      "Bash(az sql server list:*)",
+      "Bash(az sql server show:*)",
+      "Bash(az sql db list:*)",
+      "Bash(az sql db show:*)",
+      "Bash(az sql elastic-pool list:*)",
+      "Bash(az cosmosdb list:*)",
+      "Bash(az cosmosdb show:*)",
+      "Bash(az cosmosdb database list:*)",
+      "Bash(az cosmosdb collection list:*)",
+      "Bash(az postgres server list:*)",
+      "Bash(az postgres server show:*)",
+      "Bash(az mysql server list:*)",
+      "Bash(az mysql server show:*)",
+      "Bash(az redis list:*)",
+      "Bash(az redis show:*)",
+
+      // ── Monitor ───────────────────────────────────────────────────────────
+
+      "Bash(az monitor metrics list:*)",
+      "Bash(az monitor metrics list-definitions:*)",
+      "Bash(az monitor log-analytics workspace list:*)",
+      "Bash(az monitor log-analytics workspace show:*)",
+      "Bash(az monitor alert list:*)",
+      "Bash(az monitor action-group list:*)",
+      "Bash(az monitor diagnostic-settings list:*)",
+      "Bash(az monitor activity-log list:*)",
+
+      // ── Service Bus ───────────────────────────────────────────────────────
+
+      "Bash(az servicebus namespace list:*)",
+      "Bash(az servicebus namespace show:*)",
+      "Bash(az servicebus topic list:*)",
+      "Bash(az servicebus queue list:*)",
+
+      // ── Resource & tags ───────────────────────────────────────────────────
+
+      "Bash(az resource list:*)",
+      "Bash(az resource show:*)",
+      "Bash(az tag list:*)",
+      "Bash(az provider list:*)",
+      "Bash(az provider show:*)",
+      "Bash(az location list:*)"
+    ]
+  }
+}

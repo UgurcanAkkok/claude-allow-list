@@ -1,0 +1,55 @@
+{
+  "permissions": {
+    "allow": [
+      // ── ansible (ad-hoc, read-only modules) ───────────────────────────────
+
+      "Bash(ansible --version:*)",
+      "Bash(ansible --list-hosts:*)",
+      "Bash(ansible -m ping:*)",
+      "Bash(ansible -m setup:*)",
+      "Bash(ansible -m debug:*)",
+      "Bash(ansible -m command --check:*)",
+
+      // ── ansible-playbook (dry-run and syntax checks only) ─────────────────
+
+      "Bash(ansible-playbook --check:*)",
+      "Bash(ansible-playbook --syntax-check:*)",
+      "Bash(ansible-playbook --list-hosts:*)",
+      "Bash(ansible-playbook --list-tasks:*)",
+      "Bash(ansible-playbook --list-tags:*)",
+      "Bash(ansible-playbook --version:*)",
+
+      // ── ansible-inventory (inventory inspection) ──────────────────────────
+
+      "Bash(ansible-inventory --list:*)",
+      "Bash(ansible-inventory --graph:*)",
+      "Bash(ansible-inventory --host:*)",
+      "Bash(ansible-inventory --version:*)",
+
+      // ── ansible-doc (documentation, fully read-only) ──────────────────────
+
+      "Bash(ansible-doc:*)",
+
+      // ── ansible-config (configuration inspection) ─────────────────────────
+
+      "Bash(ansible-config list:*)",
+      "Bash(ansible-config dump:*)",
+      "Bash(ansible-config view:*)",
+      "Bash(ansible-config init:*)",
+
+      // ── ansible-lint (static analysis, read-only) ─────────────────────────
+
+      "Bash(ansible-lint:*)",
+
+      // ── ansible-vault (read-only operations only) ─────────────────────────
+
+      "Bash(ansible-vault view:*)",
+
+      // ── ansible-galaxy (collection/role info, read-only) ──────────────────
+
+      "Bash(ansible-galaxy collection list:*)",
+      "Bash(ansible-galaxy role list:*)",
+      "Bash(ansible-galaxy collection verify:*)"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Containers ────────────────────────────────────────────────────────
+
+      "Bash(docker ps:*)",
+      "Bash(docker inspect:*)",
+      "Bash(docker logs:*)",
+      "Bash(docker top:*)",
+      "Bash(docker stats:*)",
+      "Bash(docker port:*)",
+      "Bash(docker diff:*)",
+      "Bash(docker events:*)",
+      "Bash(docker wait:*)",
+
+      // ── Images ────────────────────────────────────────────────────────────
+
+      "Bash(docker images:*)",
+      "Bash(docker image ls:*)",
+      "Bash(docker image inspect:*)",
+      "Bash(docker image history:*)",
+
+      // ── Networks ──────────────────────────────────────────────────────────
+
+      "Bash(docker network ls:*)",
+      "Bash(docker network inspect:*)",
+
+      // ── Volumes ───────────────────────────────────────────────────────────
+
+      "Bash(docker volume ls:*)",
+      "Bash(docker volume inspect:*)",
+
+      // ── System ────────────────────────────────────────────────────────────
+
+      "Bash(docker info:*)",
+      "Bash(docker version:*)",
+      "Bash(docker system df:*)",
+      "Bash(docker system events:*)",
+
+      // ── Manifest & trust ──────────────────────────────────────────────────
+
+      "Bash(docker manifest inspect:*)",
+      "Bash(docker trust inspect:*)",
+
+      // ── Configs & secrets (metadata only, secret values are not exposed) ──
+
+      "Bash(docker config ls:*)",
+      "Bash(docker config inspect:*)",
+      "Bash(docker secret ls:*)",
+      "Bash(docker secret inspect:*)",
+
+      // ── Plugins ───────────────────────────────────────────────────────────
+
+      "Bash(docker plugin ls:*)",
+      "Bash(docker plugin inspect:*)",
+
+      // ── Contexts ──────────────────────────────────────────────────────────
+
+      "Bash(docker context ls:*)",
+      "Bash(docker context inspect:*)",
+
+      // ── Buildx ────────────────────────────────────────────────────────────
+
+      "Bash(docker buildx ls:*)",
+      "Bash(docker buildx inspect:*)",
+      "Bash(docker buildx imagetools inspect:*)",
+
+      // ── Compose ───────────────────────────────────────────────────────────
+
+      "Bash(docker compose ps:*)",
+      "Bash(docker compose logs:*)",
+      "Bash(docker compose config:*)",
+      "Bash(docker compose images:*)",
+      "Bash(docker compose top:*)",
+      "Bash(docker compose events:*)",
+      "Bash(docker compose port:*)",
+
+      // ── Swarm: services ───────────────────────────────────────────────────
+
+      "Bash(docker service ls:*)",
+      "Bash(docker service inspect:*)",
+      "Bash(docker service logs:*)",
+      "Bash(docker service ps:*)",
+
+      // ── Swarm: stacks ─────────────────────────────────────────────────────
+
+      "Bash(docker stack ls:*)",
+      "Bash(docker stack ps:*)",
+      "Bash(docker stack services:*)",
+
+      // ── Swarm: nodes ──────────────────────────────────────────────────────
+
+      "Bash(docker node ls:*)",
+      "Bash(docker node inspect:*)",
+      "Bash(docker node ps:*)"
+    ]
+  }
+}

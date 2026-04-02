@@ -1,0 +1,97 @@
+{
+  "permissions": {
+    "allow": [
+      // Text processing
+      "Bash(awk:*)",
+      "Bash(cat:*)",
+      "Bash(column:*)",
+      "Bash(comm:*)",
+      "Bash(cut:*)",
+      "Bash(diff:*)",
+      "Bash(echo:*)",
+      "Bash(expand:*)",
+      "Bash(file:*)",
+      "Bash(fmt:*)",
+      "Bash(fold:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(join:*)",
+      "Bash(od:*)",
+      "Bash(paste:*)",
+      "Bash(rg:*)",
+      "Bash(sort:*)",
+      "Bash(strings:*)",
+      "Bash(tail:*)",
+      "Bash(tr:*)",
+      "Bash(unexpand:*)",
+      "Bash(uniq:*)",
+      "Bash(wc:*)",
+      "Bash(xxd:*)",
+
+      // Filesystem & metadata
+      "Bash(basename:*)",
+      "Bash(cmp:*)",
+      "Bash(date:*)",
+      "Bash(df:*)",
+      "Bash(dirname:*)",
+      "Bash(du:*)",
+      "Bash(ls:*)",
+      "Bash(realpath:*)",
+      "Bash(stat:*)",
+      "Bash(tree:*)",
+      "Bash(type:*)",
+
+      // Process & system info
+      "Bash(env:*)",
+      "Bash(hostname:*)",
+      "Bash(id:*)",
+      "Bash(lsof:*)",
+      "Bash(printenv:*)",
+      "Bash(ps:*)",
+      "Bash(pwd:*)",
+      "Bash(sleep:*)",
+      "Bash(uname:*)",
+      "Bash(uptime:*)",
+      "Bash(whoami:*)",
+
+      // Networking
+      "Bash(dig:*)",
+      "Bash(host:*)",
+      "Bash(ipcalc:*)",
+      "Bash(netstat:*)",
+      "Bash(nslookup:*)",
+      "Bash(ping:*)",
+      "Bash(ss:*)",
+      "Bash(traceroute:*)",
+      "Bash(whois:*)",
+
+      // Help & documentation
+      "Bash(whatis:*)",
+      "Bash(whereis:*)",
+      "Bash(which:*)",
+
+      // Encoding & hashing
+      "Bash(base64:*)",
+      "Bash(md5sum:*)",
+      "Bash(sha256sum:*)",
+      "Bash(shasum:*)",
+
+      // OpenSSL (inspection only)
+      "Bash(openssl dgst:*)",
+      "Bash(openssl s_client:*)",
+      "Bash(openssl verify:*)",
+      "Bash(openssl x509:*)",
+
+      // Git (read-only subcommands)
+      "Bash(git blame:*)",
+      "Bash(git describe:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git ls-remote:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git show:*)",
+      "Bash(git status:*)"
+    ]
+  }
+}

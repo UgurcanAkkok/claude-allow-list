@@ -1,0 +1,106 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Auth ──────────────────────────────────────────────────────────────
+
+      "Bash(gh auth status:*)",
+
+      // ── Pull requests ─────────────────────────────────────────────────────
+
+      "Bash(gh pr list:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr status:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr checks:*)",
+
+      // ── Issues ────────────────────────────────────────────────────────────
+
+      "Bash(gh issue list:*)",
+      "Bash(gh issue view:*)",
+      "Bash(gh issue status:*)",
+
+      // ── Repositories ──────────────────────────────────────────────────────
+
+      "Bash(gh repo list:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh repo deploy-key list:*)",
+
+      // ── Releases ──────────────────────────────────────────────────────────
+
+      "Bash(gh release list:*)",
+      "Bash(gh release view:*)",
+
+      // ── GitHub Actions: runs ──────────────────────────────────────────────
+
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+
+      // ── GitHub Actions: workflows ─────────────────────────────────────────
+
+      "Bash(gh workflow list:*)",
+      "Bash(gh workflow view:*)",
+
+      // ── GitHub Actions: cache ─────────────────────────────────────────────
+
+      "Bash(gh cache list:*)",
+
+      // ── Search ────────────────────────────────────────────────────────────
+
+      "Bash(gh search repos:*)",
+      "Bash(gh search issues:*)",
+      "Bash(gh search prs:*)",
+      "Bash(gh search commits:*)",
+      "Bash(gh search code:*)",
+
+      // ── Projects ──────────────────────────────────────────────────────────
+
+      "Bash(gh project list:*)",
+      "Bash(gh project view:*)",
+      "Bash(gh project item-list:*)",
+      "Bash(gh project field-list:*)",
+
+      // ── Labels ────────────────────────────────────────────────────────────
+
+      "Bash(gh label list:*)",
+
+      // ── Secrets & variables (names only, values are never exposed) ─────────
+
+      "Bash(gh secret list:*)",
+      "Bash(gh variable list:*)",
+
+      // ── SSH & GPG keys ────────────────────────────────────────────────────
+
+      "Bash(gh ssh-key list:*)",
+      "Bash(gh gpg-key list:*)",
+
+      // ── Rulesets ──────────────────────────────────────────────────────────
+
+      "Bash(gh ruleset list:*)",
+      "Bash(gh ruleset view:*)",
+
+      // ── Organizations ─────────────────────────────────────────────────────
+
+      "Bash(gh org list:*)",
+
+      // ── Codespaces ────────────────────────────────────────────────────────
+
+      "Bash(gh codespace list:*)",
+      "Bash(gh codespace view:*)",
+      "Bash(gh codespace ports:*)",
+
+      // ── Gists ─────────────────────────────────────────────────────────────
+
+      "Bash(gh gist list:*)",
+      "Bash(gh gist view:*)",
+
+      // ── Attestations ─────────────────────────────────────────────────────
+
+      "Bash(gh attestation verify:*)",
+
+      // ── Extensions & status ───────────────────────────────────────────────
+
+      "Bash(gh extension list:*)",
+      "Bash(gh status:*)"
+    ]
+  }
+}

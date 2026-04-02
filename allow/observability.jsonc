@@ -1,0 +1,135 @@
+{
+  "permissions": {
+    "allow": [
+      // ── promtool (Prometheus) ──────────────────────────────────────────────
+
+      // Rule & config validation
+      "Bash(promtool check rules:*)",
+      "Bash(promtool check config:*)",
+      "Bash(promtool check web-config:*)",
+      "Bash(promtool check metrics:*)",
+
+      // Querying (read-only against running Prometheus)
+      "Bash(promtool query instant:*)",
+      "Bash(promtool query range:*)",
+      "Bash(promtool query series:*)",
+      "Bash(promtool query labels:*)",
+
+      // TSDB inspection (read-only analysis)
+      "Bash(promtool tsdb analyze:*)",
+      "Bash(promtool tsdb dump:*)",
+      "Bash(promtool tsdb list:*)",
+
+      // Unit tests
+      "Bash(promtool test rules:*)",
+
+      // Debug
+      "Bash(promtool debug pprof:*)",
+      "Bash(promtool debug metrics:*)",
+      "Bash(promtool debug all:*)",
+
+      // Version
+      "Bash(promtool --version:*)",
+
+      // ── amtool (Alertmanager) ──────────────────────────────────────────────
+
+      // Alert inspection
+      "Bash(amtool alert query:*)",
+      "Bash(amtool alert:*)",
+
+      // Silence inspection (query only, no create/expire)
+      "Bash(amtool silence query:*)",
+
+      // Config inspection & validation
+      "Bash(amtool config show:*)",
+      "Bash(amtool config routes:*)",
+      "Bash(amtool config routes show:*)",
+      "Bash(amtool config routes test:*)",
+      "Bash(amtool check-config:*)",
+
+      // Version
+      "Bash(amtool version:*)",
+
+      // ── logcli (Loki) ─────────────────────────────────────────────────────
+
+      // Log querying
+      "Bash(logcli query:*)",
+      "Bash(logcli instant-query:*)",
+
+      // Metadata inspection
+      "Bash(logcli labels:*)",
+      "Bash(logcli series:*)",
+
+      // Stats
+      "Bash(logcli stats:*)",
+
+      // Version
+      "Bash(logcli --version:*)",
+
+      // ── otelcol / otel-collector ───────────────────────────────────────────
+
+      // Config validation (no side effects)
+      "Bash(otelcol validate:*)",
+      "Bash(otelcol --dry-run:*)",
+      "Bash(otel-collector validate:*)",
+
+      // Component & build info
+      "Bash(otelcol components:*)",
+      "Bash(otelcol --version:*)",
+      "Bash(otel-collector --version:*)",
+
+      // ── grafana-cli ────────────────────────────────────────────────────────
+
+      // Plugin listing (read-only)
+      "Bash(grafana-cli plugins ls:*)",
+      "Bash(grafana-cli plugins list-remote:*)",
+      "Bash(grafana-cli plugins list-versions:*)",
+
+      // Version
+      "Bash(grafana-cli --version:*)",
+      "Bash(grafana-cli version:*)",
+
+      // ── Vector ────────────────────────────────────────────────────────────
+
+      // Config validation
+      "Bash(vector validate:*)",
+
+      // Topology inspection
+      "Bash(vector graph:*)",
+
+      // Component listing
+      "Bash(vector list:*)",
+
+      // Real-time diagnostic (read-only, does not modify pipeline state)
+      "Bash(vector top:*)",
+
+      // Version
+      "Bash(vector --version:*)",
+      "Bash(vector version:*)",
+
+      // ── Fluent Bit ────────────────────────────────────────────────────────
+
+      // Dry-run / config check (parses config without starting the daemon)
+      "Bash(fluent-bit --dry-run:*)",
+      "Bash(fluent-bit -t:*)",
+
+      // Version & help
+      "Bash(fluent-bit --version:*)",
+      "Bash(fluent-bit -V:*)",
+      "Bash(fluent-bit --help:*)",
+
+      // ── Jaeger ────────────────────────────────────────────────────────────
+
+      "Bash(jaeger-query --version:*)",
+      "Bash(jaeger --version:*)",
+      "Bash(jaeger-collector --version:*)",
+      "Bash(jaeger-agent --version:*)",
+      "Bash(jaeger-ingester --version:*)",
+
+      // ── Tempo ─────────────────────────────────────────────────────────────
+
+      "Bash(tempo --version:*)",
+      "Bash(tempo -version:*)"
+    ]
+  }
+}

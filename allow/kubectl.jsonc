@@ -1,0 +1,79 @@
+{
+  "permissions": {
+    "allow": [
+      // Resource inspection
+      "Bash(kubectl get:*)",
+      "Bash(kubectl describe:*)",
+
+      // Logs & monitoring
+      "Bash(kubectl logs:*)",
+      "Bash(kubectl top:*)",
+
+      // Events
+      "Bash(kubectl events:*)",
+
+      // Rollout status (read-only)
+      "Bash(kubectl rollout status:*)",
+      "Bash(kubectl rollout history:*)",
+
+      // Diff (dry-run compare against live state, no apply)
+      "Bash(kubectl diff:*)",
+
+      // Render kustomize manifests locally
+      "Bash(kubectl kustomize:*)",
+
+      // Auth & permissions
+      "Bash(kubectl auth can-i:*)",
+      "Bash(kubectl auth whoami:*)",
+
+      // API discovery
+      "Bash(kubectl api-resources:*)",
+      "Bash(kubectl api-versions:*)",
+      "Bash(kubectl explain:*)",
+
+      // Cluster & version info
+      "Bash(kubectl cluster-info:*)",
+      "Bash(kubectl version:*)",
+
+      // Kubeconfig inspection
+      "Bash(kubectl config view:*)",
+      "Bash(kubectl config get-contexts:*)",
+      "Bash(kubectl config get-clusters:*)",
+      "Bash(kubectl config get-users:*)",
+      "Bash(kubectl config current-context:*)",
+
+      // ── Helm (read-only) ─────────────────────────────────────────────────
+
+      // Release inspection
+      "Bash(helm list:*)",
+      "Bash(helm status:*)",
+      "Bash(helm history:*)",
+      "Bash(helm get all:*)",
+      "Bash(helm get values:*)",
+      "Bash(helm get manifest:*)",
+      "Bash(helm get hooks:*)",
+      "Bash(helm get notes:*)",
+
+      // Chart inspection
+      "Bash(helm show all:*)",
+      "Bash(helm show chart:*)",
+      "Bash(helm show values:*)",
+      "Bash(helm show readme:*)",
+
+      // Local rendering & validation (no cluster writes)
+      "Bash(helm template:*)",
+      "Bash(helm lint:*)",
+      "Bash(helm diff:*)",
+
+      // Repository & plugin inspection
+      "Bash(helm repo list:*)",
+      "Bash(helm search repo:*)",
+      "Bash(helm search hub:*)",
+      "Bash(helm plugin list:*)",
+
+      // Environment & version
+      "Bash(helm env:*)",
+      "Bash(helm version:*)"
+    ]
+  }
+}
